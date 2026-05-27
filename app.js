@@ -11,7 +11,7 @@ app.get('/deployment', (req, res) => {
 })
 
 app.get('/production', (req, res) => {
-  res.json({ message: 'Deployment done in production!' })
+  res.json({ message: 'Deployment done in production! lets check routes.' })
 })
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
