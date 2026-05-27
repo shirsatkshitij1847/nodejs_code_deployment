@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
 app.get('/deployment', (req, res) => {
   res.json({ message: 'Deployment successful!' })
 })
+
+app.get('/production', (req, res) => {
+  res.json({ message: 'Deployment done in production!' })
+})
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
